@@ -146,6 +146,7 @@ html, body {
 /* Image Container */
 .image-container {
     max-width: 200%;
+    width: 50%;
     height: 100%; /* Makes the image container take full height */
     display: flex;
     justify-content: center;
