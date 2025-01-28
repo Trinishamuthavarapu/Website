@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic HTML with JavaScript</title>
+  <style>
+    .mainBlock { border: 2px solid #000; padding: 20px; margin: 20px auto; width: 300px; text-align: center; }
+    .topBlock img { width: 100%; height: auto; }
+    .bottomBlock h1 { font-size: 20px; margin: 10px 0; }
+    .bottomBlock button { padding: 10px 15px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <script>
+    const mainBlock = document.createElement('div');
+    mainBlock.className = 'mainBlock';
+    mainBlock.innerHTML = `
+      <div class="topBlock"><img src="images/logo2.jpg" alt="*"></div>
+      <div class="bottomBlock">
+        <h1>Burger Week</h1>
+        <button>View More</button>
+      </div>`;
+    document.body.appendChild(mainBlock);
+  </script>
+</body>
+</html>
